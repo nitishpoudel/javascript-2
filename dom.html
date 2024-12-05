@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=lang">
+    <title>Learning dom</title>
+</head>
+<style>
+   
+    .java-button{
+        padding: 10px 10px 15px;
+        border-radius: 10px;
+        border: none;
+        font-size: 1.0rem;
+        font-weight: bold;
+    }
+    :hover.java-button{
+        background-color: black;
+        color: white;
+       
+    }
+    .cc{
+        padding: 10px 10px 10px;
+        background-color: green;
+        border: none;
+        color: beige;
+         margin-left: 4px;
+         border: none;
+
+    }
+    .o{
+        height: 30px;
+    }
+</style>
+<body>
+    <!-- <button>ClickOder me!</button> -->
+           <p>YouTube subscribe button</p>
+           <button onclick="
+           sub();
+        //    calling function
+        //    const buttonElement = document.querySelector('.java-button')
+        //    if(buttonElement.innerHTML === 'subscribe'){
+        //     buttonElement.innerHTML = 'subscribed'
+
+        //    }
+        //    else{
+        //     buttonElement.innerHTML = 'subscribe'
+        //    }
+           
+        //    "
+           class="java-button">subscribe</button>
+           <p>Amazon shipping calculator</p>
+           <p>Order under 40$ = +$10 shipping</p>
+           <p>Order over 40$ = FREE shipping</p>
+           <input class="kk" placeholder="Cost of Order"
+           onclick="
+           CalculateTotal();
+           
+           
+           ">
+           <button class="cc" onclick="
+           CalculateTotal();
+          
+           
+           
+           " >Calculate</button>
+           <p class="sailu"></p>
+
+</body>
+<script>
+    function sub(){
+        const buttonElement = document.querySelector('.java-button')
+           if(buttonElement.innerHTML === 'subscribe'){
+            buttonElement.innerHTML = 'subscribed'
+
+           }
+           else{
+            buttonElement.innerHTML = 'subscribe'
+           }
+    
+
+    }
+    function CalculateTotal(){
+        
+        const inputElement = document.querySelector('.kk');
+        let cost = Number(inputElement.value);
+        if(cost < 40){
+            cost = cost + 10;
+
+        }
+
+       
+        document.querySelector('.sailu').
+        innerHTML = `$${cost}`;
+    }
+   
+    
+</script>
+</html>
