@@ -1,0 +1,42 @@
+.todo-container{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    margin-top: 10px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    margin-left: 50px;
+    
+
+}
+h1{
+    margin-left: 100px;
+}
+.tt{
+    font-size: 15px;
+    padding: 5px;
+}
+.dd{
+    font-size: 15px;
+    padding: 5px;
+    
+
+}
+.btn{
+    padding: 10px 10px 10px;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 15%;
+}
+.todobtn{
+    padding: 10px 10px 10px;
+    border: none;
+    border-radius: 15%;
+   
+    background-color: brown;
+}
